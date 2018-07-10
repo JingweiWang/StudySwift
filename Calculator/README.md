@@ -2,10 +2,10 @@
 
 ## 开发环境:
 
-1. 操作系统: *macOS Sierra*
-2. IDE: *Xcode 8.1 (8B62)*
-3. Language: *Swift 3.0*
-4. Development Target: *10.1*
+1. 操作系统: *macOS High Sierra*
+2. IDE: *Xcode 9.4.1 (9F2000)*
+3. Language: *Swift 4.1*
+4. Development Target: *11.4*
 5. Devices: *Universal*
 
 ## 参考文献:
