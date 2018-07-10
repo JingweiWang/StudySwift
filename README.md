@@ -1,18 +1,13 @@
 # StudySwift
-这是我在学习Swift时写的小东西.
 
-## Calculator
+## 参考文献
 
-简易计算器
+- [《Swift开发手册：技巧与实战》](https://item.jd.com/11848561.html)
+-  [《iOS Programming: The Big Nerd Ranch Guide (6th Edition)》](https://www.bignerdranch.com/books/ios-programming/)
 
-- 参考 [《Swift开发手册：技巧与实战》](https://item.jd.com/11848561.html)
+## Table of Contents
 
-## CalculatorForMVC
-
-基于MVC模式的简易计算器
-
-- 参考 [《Swift开发手册：技巧与实战》](https://item.jd.com/11848561.html)
-
-## Quiz
-
-- 参考 [《iOS Programming: The Big Nerd Ranch Guide (6th Edition)》](https://www.bignerdranch.com/books/ios-programming/)
+* [Calculator](/Calculator): 简易计算器
+* [CalculatorForMVC](/CalculatorForMVC): 基于MVC模式的简易计算器
+* [Quiz](/Quiz): 简易问答
+* [MyPlayground](/MyPlayground)
