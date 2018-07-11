@@ -9,14 +9,22 @@
 //import Foundation
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("ConversionViewController loaded its view.")
+
         updateCelsiusLabel()
     }
     @IBOutlet var celsiusLabel: UILabel!
+    @IBOutlet var textField: UITextField!
     var fahrenheitValue: Measurement<UnitTemperature>? {
+        willSet {
+            //fahrenheitValue数据更新之前来执行something()
+        }
         didSet {
+            //fahrenheitValue数据更新之后来执行updateCelsiusLabel()
             updateCelsiusLabel()
         }
     }
@@ -34,15 +42,14 @@ class ConversionViewController: UIViewController {
         nf.minimumFractionDigits = 1
         return nf
     }()
-    @IBOutlet var textField: UITextField!
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
-        //        celsiusLabel.text = textField.text
-        
-        //        if let text = textField.text, !text.isEmpty {
-        //            celsiusLabel.text = text
-        //        } else {
-        //            celsiusLabel.text = "???"
-        //        }
+        //celsiusLabel.text = textField.text
+        //
+        //if let text = textField.text, !text.isEmpty {
+        //    celsiusLabel.text = text
+        //} else {
+        //    celsiusLabel.text = "???"
+        //}
         
         if let text = textField.text, let value = Double(text) {
             fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
@@ -56,11 +63,28 @@ class ConversionViewController: UIViewController {
     
     func updateCelsiusLabel() {
         if let celsiusValue = celsiusValue {
-//            celsiusLabel.text = "\(celsiusValue.value)"
+            //celsiusLabel.text = "\(celsiusValue.value)"
+            
             celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
-
         } else {
             celsiusLabel.text = "???"
+        }
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        //print("Current text: \(textField.text)")
+        //print("Replacement text: \(string)")
+        //return true
+        
+        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        if existingTextHasDecimalSeparator != nil,
+            replacementTextHasDecimalSeparator != nil{
+            return false
+        } else {
+            return true
         }
     }
 }
