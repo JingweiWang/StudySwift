@@ -28,6 +28,11 @@ let secondElement = countingUp[1]
 countingUp.count
 countingUp.append("three")
 let nameByParkingSpace = [13:"Alice",27:"Bob"]
+//let space13Assignee: String? = nameByParkingSpace[13]
+let space42Assignee: String? = nameByParkingSpace[42]
+if let space13Assignee = nameByParkingSpace[13] {
+    print("Key 13 is assigned in the dictionary:" + space13Assignee)
+}
 
 let emptySting = String()
 emptySting.isEmpty
@@ -48,5 +53,62 @@ let easyPi = 3.14
 let floatFromDoule = Float(easyPi)
 let floatingPi: Float = 3.14
 
-//page to 37
+var anOptionalFloat: Float?
+var anOptionalArrayOfStrings: [String]?
+var anOptionalArrayOfOptionalStrings: [String?]?
 
+var reading1: Float?
+var reading2: Float?
+var reading3: Float?
+reading1 = 9.8
+reading2 = 9.2
+//reading3 = 9.7
+
+//let avgReading = (reading1 + reading2 + reading3) / 3
+//let avgReading = (reading1! + reading2! + reading3!) / 3
+if let r1 = reading1,
+    let r2 = reading2,
+    let r3 = reading3 {
+    _ = (r1 + r2 + r3) / 3
+} else {
+    _ = "Instrument reported a reading that was nil"
+}
+
+let range = 0..<countingUp.count
+for i in range {
+    _ = countingUp[i]
+}
+
+for string in countingUp {
+    string
+}
+
+for (i, string) in countingUp.enumerated() {
+    _ = "(\(i), \(string))"
+}
+
+for (space, name) in nameByParkingSpace {
+    _ = "Space \(space): \(name)"
+}
+
+enum PieType: Int {
+    case apple = 0
+    case cherry
+    case pecan
+}
+let favoritePie = PieType.apple
+
+let name: String
+switch favoritePie {
+case .apple:
+    name = "Apple"
+case .cherry:
+    name = "Cherry"
+case .pecan:
+    name = "Pecan"
+}
+
+let pieRawValue = PieType.pecan.rawValue
+if let pieType = PieType(rawValue: pieRawValue) {
+    pieType
+}
