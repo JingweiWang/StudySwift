@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640554E720F777E900B91897 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 640554E920F777E900B91897 /* Localizable.strings */; };
 		6450191520F5DDC900ABA279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450191420F5DDC900ABA279 /* AppDelegate.swift */; };
 		6450191A20F5DDC900ABA279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6450191820F5DDC900ABA279 /* Main.storyboard */; };
 		6450191C20F5DDCA00ABA279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6450191B20F5DDCA00ABA279 /* Assets.xcassets */; };
@@ -36,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		640554E220F7739800B91897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		640554E320F7740A00B91897 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		640554E420F7741C00B91897 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		640554E820F777E900B91897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		640554EA20F777F200B91897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		640554EB20F777F500B91897 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		640554EC20F777F600B91897 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6450191120F5DDC900ABA279 /* WroldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WroldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6450191420F5DDC900ABA279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6450191920F5DDC900ABA279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 		6450191320F5DDC900ABA279 /* WroldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				640554E920F777E900B91897 /* Localizable.strings */,
 				6450191420F5DDC900ABA279 /* AppDelegate.swift */,
 				64BCA84C20F5FC6E00696060 /* ConversionViewController.swift */,
 				6450191820F5DDC900ABA279 /* Main.storyboard */,
@@ -226,6 +235,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				"zh-Hans",
 			);
 			mainGroup = 6450190820F5DDC900ABA279;
 			productRefGroup = 6450191220F5DDC900ABA279 /* Products */;
@@ -245,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6450191F20F5DDCA00ABA279 /* LaunchScreen.storyboard in Resources */,
+				640554E720F777E900B91897 /* Localizable.strings in Resources */,
 				6450191C20F5DDCA00ABA279 /* Assets.xcassets in Resources */,
 				6450191A20F5DDC900ABA279 /* Main.storyboard in Resources */,
 			);
@@ -309,10 +321,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		640554E920F777E900B91897 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				640554E820F777E900B91897 /* en */,
+				640554EA20F777F200B91897 /* Base */,
+				640554EB20F777F500B91897 /* es */,
+				640554EC20F777F600B91897 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		6450191820F5DDC900ABA279 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6450191920F5DDC900ABA279 /* Base */,
+				640554E220F7739800B91897 /* en */,
+				640554E320F7740A00B91897 /* es */,
+				640554E420F7741C00B91897 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -332,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -392,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
