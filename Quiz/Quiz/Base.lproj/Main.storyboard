@@ -18,28 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waP-uc-HXi">
+                                <rect key="frame" x="195" y="50" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KA-ya-gid">
-                                <rect key="frame" x="158" y="133" width="98" height="30"/>
+                                <rect key="frame" x="158" y="90" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OM0-1q-aZ1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKy-yw-w2F">
-                                <rect key="frame" x="195" y="356" width="25" height="21"/>
+                                <rect key="frame" x="195" y="192" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qi-In-jgT">
-                                <rect key="frame" x="161" y="385" width="93" height="30"/>
+                                <rect key="frame" x="161" y="238" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N32-on-QzG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waP-uc-HXi">
-                                <rect key="frame" x="195" y="104" width="25" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-zg-hVE">
+                                <rect key="frame" x="186" y="50" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,23 +53,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9KA-ya-gid" firstAttribute="top" secondItem="waP-uc-HXi" secondAttribute="bottom" constant="8" symbolic="YES" id="76e-dI-Czj"/>
-                            <constraint firstItem="4Qi-In-jgT" firstAttribute="top" secondItem="kKy-yw-w2F" secondAttribute="bottom" constant="8" symbolic="YES" id="H4g-zh-XzV"/>
-                            <constraint firstItem="4Qi-In-jgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pu5-XD-a4m"/>
-                            <constraint firstItem="waP-uc-HXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WW9-GW-Ip1"/>
-                            <constraint firstItem="4Qi-In-jgT" firstAttribute="centerX" secondItem="9KA-ya-gid" secondAttribute="centerX" id="a4N-PI-K0R"/>
-                            <constraint firstItem="waP-uc-HXi" firstAttribute="centerX" secondItem="9KA-ya-gid" secondAttribute="centerX" id="abc-gX-DgP"/>
-                            <constraint firstItem="kKy-yw-w2F" firstAttribute="centerX" secondItem="9KA-ya-gid" secondAttribute="centerX" id="eYJ-pQ-NTh"/>
-                            <constraint firstItem="kKy-yw-w2F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eko-5a-RUi"/>
-                            <constraint firstItem="kKy-yw-w2F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="356" id="guK-OC-iMd"/>
-                            <constraint firstItem="9KA-ya-gid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khI-IH-xI8"/>
-                            <constraint firstItem="9KA-ya-gid" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="133" id="r7Y-W6-acb"/>
+                            <constraint firstItem="waP-uc-HXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0bm-NH-R7j"/>
+                            <constraint firstItem="4Qi-In-jgT" firstAttribute="top" secondItem="kKy-yw-w2F" secondAttribute="bottom" constant="25" id="5jj-aa-KhR"/>
+                            <constraint firstItem="kKy-yw-w2F" firstAttribute="top" secondItem="9KA-ya-gid" secondAttribute="bottom" constant="72" id="BC1-zO-ziq"/>
+                            <constraint firstItem="Lr1-zg-hVE" firstAttribute="top" secondItem="waP-uc-HXi" secondAttribute="top" id="O50-1g-Gqt"/>
+                            <constraint firstItem="4Qi-In-jgT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SyF-Ja-Tda"/>
+                            <constraint firstItem="Lr1-zg-hVE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UUc-NP-2aU"/>
+                            <constraint firstItem="9KA-ya-gid" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YfE-5w-f2g"/>
+                            <constraint firstItem="kKy-yw-w2F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cfW-Sq-HSe"/>
+                            <constraint firstItem="9KA-ya-gid" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="vqW-vO-YJ1"/>
+                            <constraint firstItem="waP-uc-HXi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="xo1-Cw-py0" userLabel="Current Question Label.top = Safe Area.top + 30"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="kKy-yw-w2F" id="w4y-EE-6ON"/>
-                        <outlet property="questionLabel" destination="waP-uc-HXi" id="eRZ-ea-X91"/>
+                        <outlet property="currentQuestionLabel" destination="waP-uc-HXi" id="JNm-Vf-RHY"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="0bm-NH-R7j" id="XDZ-dw-A3K"/>
+                        <outlet property="nextQuestionLabel" destination="Lr1-zg-hVE" id="VqA-lB-Bdt"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="UUc-NP-2aU" id="dO7-Th-7Xx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
