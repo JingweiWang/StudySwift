@@ -1,4 +1,4 @@
-# Quiz
+# Buggy
 
 ## 开发环境:
 
@@ -9,4 +9,4 @@
 
 ## 参考文献:
 
-[1] Christian Keur, Aaron Hillegass. iOS Programming: The Big Nerd Ranch Guide(6th Edition)[M]. Big Nerd Ranch, 2016. 1-28, 143-156
+[1] Christian Keur, Aaron Hillegass. iOS Programming: The Big Nerd Ranch Guide(6th Edition)[M]. Big Nerd Ranch, 2016. 157-176
