@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64C7FB892105C0450098373F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C7FB882105C0450098373F /* DetailViewController.swift */; };
 		64EF8629210085EF008A4469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8628210085EF008A4469 /* AppDelegate.swift */; };
 		64EF862E210085EF008A4469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EF862C210085EF008A4469 /* Main.storyboard */; };
 		64EF8630210085F0008A4469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EF862F210085F0008A4469 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64C7FB882105C0450098373F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		64EF8625210085EF008A4469 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EF8628210085EF008A4469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EF862D210085EF008A4469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				64EF8658210087C0008A4469 /* Item.swift */,
 				64EF865A21008F42008A4469 /* ItemStore.swift */,
 				64EF865C2100B278008A4469 /* ItemCell.swift */,
+				64C7FB882105C0450098373F /* DetailViewController.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				64EF865721008645008A4469 /* ItemsViewController.swift in Sources */,
 				64EF8659210087C0008A4469 /* Item.swift in Sources */,
 				64EF865B21008F42008A4469 /* ItemStore.swift in Sources */,
+				64C7FB892105C0450098373F /* DetailViewController.swift in Sources */,
 				64EF8629210085EF008A4469 /* AppDelegate.swift in Sources */,
 				64EF865D2100B278008A4469 /* ItemCell.swift in Sources */,
 			);
