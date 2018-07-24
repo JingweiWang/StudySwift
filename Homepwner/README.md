@@ -9,4 +9,4 @@
 
 ## 参考文献:
 
-[1] Christian Keur, Aaron Hillegass. iOS Programming: The Big Nerd Ranch Guide(6th Edition)[M]. Big Nerd Ranch, 2016. 177-258
+[1] Christian Keur, Aaron Hillegass. iOS Programming: The Big Nerd Ranch Guide(6th Edition)[M]. Big Nerd Ranch, 2016. 177-269
